@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+
+		<title>Review of Useful HTML tags</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!--  <link rel="stylesheet" href="filepath/filename.css"> -->
+		<!--  When you have a stylesheet you can uncomment the link element above and edit the href to suit your file system and 		point to your CSS sheet -->
+	</head>
+
+
+	<body> <!-- Use this section for the content of your webpage - more detail https://www.w3schools.com/tags/tag_body.asp -->
+	
+	<div id="*Insert appropriate ID - this will not display on your website*">
+
+	<h1>This is a Heading.</h1>
+	<p>You can define a hierarchy of headings by using h1, h2, h3 etc. to h6 </p>
+	
+	<p>This is a paragraph. You can use this for longer sections of text. If you want to use space/start a new paragraph, you can use the br element to.... <br> ....insert a linebreak.</p>
+
+<h2>Textual formatting</h2>
+	<p> Much of your formatting will come from the css stylesheet. We'll return to this in week 4, but there are some basic styling techniques that you can embed directly in your html. For example, you can also include things like <b>bold</b>, <i>italics</i> etc. (https://www.w3schools.com/html/html_formatting.asp). Also, if you don't like copying and pasting those links into your browser, you can also include links by using the link tag, like this: <a href="https://www.w3schools.com/tags/tag_a.asp">This is a link.</a>
+	</p>
+
+<h2>Images</h2>
+
+	<p> To insert an image, you will need to use the <a href="https://www.w3schools.com/tags/tag_img.asp"> img tag</a>. You will also need to 	ensure that the image you want to include is within your server and that you know the <b>relative file location</b>. In this example set of files the relative file location is "images/sleeping_cat_on_her_back.jpg". So we pop that into the image tag and <i>voila!</i>
+	</p>
+
+	<img src="images/sleeping_cat_on_her_back.jpg" alt="relaxed cat, sleeping on her back in the sun" width="125" height="150">
+
+	<p>We'll come back to images in week 7 :-) but don't forget to log any resources that you find and save into your metadata document. This <a href="https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg">adorable cat</a> is from wikicommons, which is a great resource of copyright free/open usage material that you can use for your projects.</p>
+<p>You can also set an img tag within the <a href="https://www.w3schools.com/TAgs/tag_figure.asp">figure</a> tag to let you add some mark-up to the image.</p>
+		<figure>
+		<img src="images/sleeping_cat_on_her_back.jpg" alt="relaxed cat, sleeping on her back in the sun" id="cat" width="125" height="150">
+		<figcaption>
+		A relaxed cat, sleeping on her back in the sun. <br>
+		Shared by Umberto Salvagnin at <a href="https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg">wikimedia.org</a>. Licence <a href=" https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+		</figcaption>
+		</figure>
+
+
+<h2>Audio</h2>
+	<p> Audio content is nested in the <a href="https://www.w3schools.com/html/html5_audio.asp">audio</a> tag. This tag also allows you to insert the audio controls needed to interact with the audio file. We will return to audio content in week 8! This audio file is available from the <a href="https://sound-effects.bbcrewind.co.uk/search?q=cat">BBC Sound Effects</a> website</p>
+
+<audio controls>
+  <source src="audio/bbc_cats-purr.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h2>Video</h2>
+<p> Video content uses the <a href="https://www.w3schools.com/html/html5_video.asp">video</a> tag. Much as with audio, this tag includes all the controls you need, and also has the option to attach closed captions/subtitles for accessibility purposes (we'll explore these more in Week 10!). There will be more on video content in week 9! This video file is available from <a href="https://pixabay.com/videos/cat-feline-animal-mammal-kitten-65438/">pixabay</a> and is free for usage without attribution.</p>
+
+<video width='320' height="180" controls>
+	<source src="video/cat_looking_around.mp4" type="video/mp4">
+</video>
+
+<h2>Other tags</h2>
+There are a great array of tags that you might find helpful. Check out the <a href="https://www.w3schools.com/html/default.asp">W3Schools HTML tutorial</a> for some ideas. 
+		
+	
+	</body>
+</html>
