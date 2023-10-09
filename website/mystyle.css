@@ -1,8 +1,25 @@
 body {
-    background-color: lightblue;
+    background-color: black;
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+table {
+    font-family: Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
   }
   
   h1 {
-    color: navy;
+    margin-left: -20px;
+  }
+
+  div {
     margin-left: 20px;
   }
