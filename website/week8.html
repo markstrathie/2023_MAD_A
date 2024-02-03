@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+
+	<title>Week 8 - Digital Audio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="css/styles-week3.css">
+	<!--  When you have a stylesheet you can uncomment the link element above and edit the href to suit your file system and 		point to your CSS sheet -->
+
+</head>
+
+<body>
+
+	<!-- begin the main section of the page-->
+	<div id="week8">
+		<h1>Week 8 - Analysing and Editing Digital Audio</h1>
+		
+		<section id="il-task1">
+		<h2>IL Task 1 - Analyse the use of audio on the web</h2>
+		<p>See the images of 2 websites below. You can click on them to take you to the source website. I evaluate each for their audio use.</p>
+		<a href="https://endless-summer.richardmille.com/"><img src="img/week8-website-1.png" alt="Example website of good audio design" height="400">
+		<a href="https://geocities.restorativland.org/SiliconValley/Bay/2296/"><img src="img/week8-website-2.png" alt="Example website of bad audio design" height="400"></a>
+		<p>The first website uses sound in multiple ways. Ther eis ambient background music, then multiple sound effects that change depending on the scene being depicted. All the audio hear is used with intent - to create a feeling and an atmosphere that the brand wants customer to associate with their product (Richard Mille watches). It enhances comprehension as the sound encapsulates the 80s memphis design movement on which the watches are based. The website shows iconic scenes and sounds of summer - from people walking beside the beach, lounging at the pool, showering, skateboarding, etc. It improves the appeal of the brand as most people enjoy these environments and associated feelings. If a person can buy the product it acts to reproduce these happy moments. The websites novelty and use of various, high-quality sounds enhances retention as visitor's experience a unique and creative journey. I do not notice and disadvantages to the sound. The user even has the option to pause the ambient music if they want to focus solely on the sound effects. The audio is paired with high quality visuals that enhance all the themes introduced here. Even deaf people can experience the message of the website. As shown in the screenshot - a fun and colourful art style is deployed, the text is simple and easy to read.</p>
+		<p>The second website simply uses sound as background music. However, it does this very poorly. It is a site about learning to program, and the music is a instrumental version of <a href="https://www.youtube.com/watch?v=Tw0_qHNRAEA">Coolio's Gansta's Paradise</a>. This is completely unrelated to the topic and doesn't aid comprehension of the material. It only serves as a distraction. While it may appeal to some users and aid a retention, it does so for the wrong reasons as it is unrelated to the website's topic. Additionally, it is a low quality audio fle and only makes the website seem unprofessional. This bad audio design is coupled with poor use of multimedia. The background makes use of a tiled brick image that is not aesthetic and makes the text hard to read. The text is in luminous blue and green which only make readablity worse.</p>
+		<p>I have updated my moodboard to include examples of audio use. You can download it by clicking the screenshot.</p>
+		<a href="resources/moodboard.pptx" download><img src="img/week8-moodboard.jpg" alt="Screenshot of my moodboard" height="400"></a>
+		</section>
+		
+		<section id="il-task2">
+		<h2>IL Task 2 - Generate a portfolio of audio content</h2>
+		<p>I found 2 audio files that are relevant to my topic. The first is a <a href="https://freemusicarchive.org/music/Chad_Crouch/Arps/Algorithms/">song</a>. The second is a <a href="https://freesound.org/people/SieuAmThanh/sounds/699735/">sound effect</a>. You can listen to them below:</p>
+		<audio controls>
+			<source src="master-files/Chad-Crouch-Algorithms.mp3" type="audio/mp3">
+		  	Your browser does not support the audio element.
+		</audio>
+		<audio controls>
+			<source src="master-files/699735__sieuamthanh__quet-ien-tu-1.wav" type="audio/wav">
+		  	Your browser does not support the audio element.
+		</audio>
+		<p>I updated my metadata and fustification speadsheet with their details. You can download it <a href="resources/mada-metadata_justification_table.xlsx" download>here</a>.</p>
+		</section>
+		
+		<section id="lab-task1">
+			<h2>Lab Task 1 - Optimise your audio for Web use</h2>
+			<p>I edited the first audio file above, the Algorithms song, using Audacity. I trimmed the start and end of the track to focus it on the main part of the song. I then saved 4 different versions with relevant names. For example - aud001-mada-algorithms-signed-16bit-pcm-0-1.wav. You can see the details on my <a href="resources/mada-metadata_justification_table.xlsx" download>metadata and justification spreadsheet</a>. Listen to the files below:</p>
+			<audio controls>
+				<source src="audio/aud001-mada-algorithms-signed-16bit-pcm-0-1.wav" type="audio/wav">
+				  Your browser does not support the audio element.
+			</audio>
+			WAV (Microsoft) signed 16-bit PCM 6.93mb<br>
+			<audio controls>
+				<source src="audio/aud002-mada-algorithms-medium-joint-stereo-0-1.mp3" type="audio/mp3">
+				  Your browser does not support the audio element.
+			</audio>
+			MP3 derivative in Medium (145-185 kbps) quality, Joint Stereo 709kb<br>
+			<audio controls>
+				<source src="audio/aud003-mada-algorithms-standard-stereo-0-1.mp3" type="audio/mp3">
+				  Your browser does not support the audio element.
+			</audio>
+			MP3 derivative in Standard (170-210 kbps) quality, Stereo 998kb<br>
+			<audio controls>
+				<source src="audio/aud004-mada-algorithms-medium-mono-0-1.mp3" type="audio/mp3">
+				  Your browser does not support the audio element.
+			</audio>
+			MP3 derivative in Medium (145-185 kbps) quality, Forced export to mono 359kb
+			</section>
+			
+			<section id="lab-task2">
+			<h2>Lab Task 2 - Exploring alternative options</h2>
+			<p>The files above have various benefits and drawbacks. Trimming the audio has the advantage of reducing filesize and because I removed the intro and outro of the song, it focused on the main section. The wav file is very high quality but a high filesize, 6.93mb. This is not very optimised. The mp3 files are much better. The medium quality is a lot smaller at 709kb with no perceptable loss in quality. The mono mp3 file is the smallest but the quality is very poor and you lose the stereo sound. So for audio on my website I will use mp3 medium quality as this is a good balance of optimisation and quality. The file below also shows the fade effect in Audactiy. I faded in the intro of the song and then faded it out. This makes the listening smoother as there is no harsh stop of the audio. I may use this tool for the audio on my final site.</p>
+			<audio controls>
+				<source src="audio/aud005-mada-algorithms-standard-joint-stereo-0-1.mp3" type="audio/mp3">
+				  Your browser does not support the audio element.
+			</audio>
+			</section>
+
+	</div>
+	<!-- end the main section of the homepage -->
+	<hr>	
+	<!-- begin navigation menu -->
+	<footer>
+	<div id="menu">
+		<a href="index.html">Back to Homepage</a>
+	</div>
+	</footer>
+	<!-- end navigation menu -->
+
+</body>
+</html>

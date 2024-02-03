@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+
+	<title>Week 10 - Accessibility</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" href="css/styles-week3.css">
+	<!--  When you have a stylesheet you can uncomment the link element above and edit the href to suit your file system and 		point to your CSS sheet -->
+
+</head>
+
+<body>
+
+	<!-- begin the main section of the page-->
+	<div id="week10">
+		<h1>Week 10 - Evaluating and Improving Accessibility</h1>
+		
+		<section id="il-task1">
+		<h2>IL Task 1 - Evaluate websites against accessibility standards</h2>
+		<p>I used the<a href="https://wave.webaim.org/">WAVE Web Accessibility Evaluation Tool</a> on one of my informative websites <a href="http://www.spacex.com/">SpaceX</a></p>
+		<img src="img/week10-tool1.png" alt="SpaceX evaluation" height="400">
+		<p>As shown in the above screenshot, the website initally complies with the accessibility standards. However, there were 2 alerts:</p>
+		<ol>
+			<li>No heading structure. Headings (h1-h6) provide important document structure, outlines, and navigation functionality to assistive technology users.</li>
+			<li>A link to a PDF document is present. Unless authored with accessibility in mind, PDF documents often have accessibility issues. Additionally, PDF documents are typically viewed using a separate application or plug-in, and can thus cause confusion and navigation difficulties.</li>
+		</ol>
+		<p>These are 2 important points I will consider in my website design. The next tool is <a href="https://webaim.org/resources/contrastchecker/?fcolor=0000FF&bcolor=FFFFFF">WebAIM Contrast Checker</a></p>
+		<img src="img/week10-tool2.png" alt="SpaceX contrast evaluation" height="400">
+		<p>Black background with white text passes all the readability tests. This is the main theme of my website. The third test is the <a href="https://webaim.org/resources/linkcontrastchecker/?fcolor=0000FF&bcolor=FFFFFF">Link Contrast Checker</a>.</p>
+		<img src="img/week10-tool3.png" alt="SpaceX link contrast evaluation" height="400">
+		<p>This tool passes hyperlinks contrast to the background but not to the body text, as they are both the same colour. However, on SpaceX the hyperlinks are formatted in bold. The tool does not take this into account. I may change the format of my hyperlinks but I will consider the accessibility before I do. The final test is the <a href="https://www.webfx.com/tools/read-able/">Readability Test Tool</a>.</p>
+		<img src="img/week10-tool4.png" alt="SpaceX readability evaluation" height="400">
+		<p>As shown in the screenshot, the evaluation concludes that the website article is suitable for 15-16 year olds. This seems like a good general level. I feel my website will have a slightly higher reading level as I plan to use more technical words to explain coding and data science concepts.</p>
+		</section>
+		
+		<section id="il-task2">
+		<h2>IL Task 2 - Record your evaluation and reflect on your own practice</h2>
+		<p>As discussed above, the SpaceX website gets a lot right, but it could be improved upon. PDF files could instead be full html pages to improve accessibility. This would stop users having to have a separate application to access the pdfs and make sure that a screen reader could access the text. Headings (h1-h6) can be used to help structure the text which would improve readability for screen readers as well. Everything else on the website complies with accessibility guidance from my evaluation.</p>
+		<p>After completing the above evaluation, I have realised a lot that my portfolio website has got right, but also some things wrong, in regards to accessibility. My pages use headings and various html formatting such as lists and tables. These methods help with legibility for screen readers. I also make use of span tag and aria labels to add text to my menu icon and navbar so screen readers can read it out to help with navigation. I beleive my writing style is suitable - not too technical but not at such a low level people will disengage. The colours I have picked are also suitable for contrast and readability. However, the default hyperlink colour does not contrast enough. I will plan to change this to white and bold as inspirated by the SpaceX website. Another thing I could improve on is the layout of my pages. They are quite text heavy and disjointed when the media changes between text and images. I may try to improve this later. I would also like to check all more hyperlinks to make sure they are labelled properly and not just 'click here.'</p>
+		</section>
+		
+		<section id="lab-task1">
+			<h2>Lab Task 1 - Learn about closed captions and subtitles</h2>
+			<p>I read the resource at <a href="https://www.techsmith.com/blog/add-captions-subtitles-video/">techsmith</a> to learn more. Subtitles are transcribed text from spoken dialogue. Captions are text to explain other sound effects such a music or noises.</p>
+		</section>
+			
+			<section id="lab-task2">
+			<h2>Lab Task 2 - Generate and implement a WebVTT file</h2>
+			<p>I read the information on <a href="https://www.3playmedia.com/blog/how-to-create-a-webvtt-file/">creating on a WebVTT file</a> and then <a href="https://www.rev.com/blog/resources/how-to-add-captions-and-subtitles-to-html5-videos">how to add captions to html</a>. You can see my video below with captions added. There is no dialogue so obviously it does not include subtitles.</p>
+			<video width="320" height="240" controls>
+				<source src="video/vid001-mada-data-video-1080-high-0-1.mp4" type="video/mp4">
+				<track label="English" kind="captions" srclang="en" src="video/captions.vtt" default>
+			  Your browser does not support the video tag.
+			  </video> 
+			</section>
+
+			<section id="lab-task3">
+				<h2>Lab Task 3 - What about other forms of accessibility?</h2>
+				<p>Three ways I plan to help support accessibility on my portfolio website:</p>
+				<ol>
+					<li>I have already created alt tags for all my images, however I plan to re-check all of these in order to make sure they decribe the images in the best way.</li>
+					<li>Using the information on W3Schools for <a href="https://www.w3schools.com/html/html_links_colors.asp">styling hyperlinks</a> I plan to alter the default style of my hyperlinks to white and bold. This was after the feedback from the readability tests in the IL tasks.</li>
+					<li>To make my website more accessible to non-English speakers I plan to include a Spanish version. I will need to research how to implement this.</li>
+				</ol>
+			</section>
+
+	</div>
+	<!-- end the main section of the homepage -->
+	<hr>	
+	<!-- begin navigation menu -->
+	<footer>
+	<div id="menu">
+		<a href="index.html">Back to Homepage</a>
+	</div>
+	</footer>
+	<!-- end navigation menu -->
+
+</body>
+</html>
